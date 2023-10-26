@@ -1,0 +1,62 @@
+html{font-size: 100%;}                                  /*Taille de Page*/    
+
+header{display: flex; font-size: 2rem;}     /*Header*/  /*Header Aligné/Taille Police*/
+
+header img{width: 30rem;height: auto;}                  /*Header Taille Image*/
+
+header p{ font-size: 2rem;                              /*Header Phrase "Tout le jardin"*/
+            margin-left: 35rem;
+            margin-top: 4rem;}
+
+h1{font-size: 2.5rem;}                                  /*Taille police Titre*/
+
+h2{font-size: 1.5rem;}                                  /*Taille police Sous-Titre*/
+
+p{ line-height: 2rem;                                   /*Paragraphes Hauteur de Ligne/Taille de Police/*/
+    font-size: 1.2rem;}                
+
+nav img{width: 100%; height: auto;}            /*Nav*/  /*Nav Image promotionnelle*/
+
+a{color: white;}                                      /*Intitulés liens de page*/
+
+ul{font-size: 1.2rem;                                   /*Liens de page Haut et Bas*/
+    background-color: black; 
+    display: flex; 
+    padding: 2rem ; 
+    gap: 2rem;
+    margin-bottom: 0.2rem;
+    margin-top: 0.2rem;}
+
+div{display: flex;}                            /*Div*/  /*Division Aside*/
+
+section{width: 70%; height: auto;}                      /*Section Section*/
+
+aside{width: 30%;                                       /*Aside paramètres*/ 
+        background-color: grey;
+        border:0.1rem solid black;
+        margin-left: 0.5rem;}
+
+main{font-size: 1.2rem;                                 /*Section Main*/
+            width: 70%;height: auto;}
+
+th{ font-size: 1.5rem;                      /*Tableau*/ /*Intitulés En-Tête Tableau*/
+                width:15rem;
+                height: 4rem;
+                text-align: center;
+                border: 0.1rem solid black;}
+
+td{ font-size: 1.2rem;                                  /*Données Corps Tableau*/
+    width:15rem;
+    height: 8rem;
+    text-align: center;
+    border: 0.1rem solid black;}
+
+sup{ color: red ;}                                    /*Astérisque en supérieur/Rouge*/
+
+form{ line-height: 1.8rem;}              /*Formulaire*/ /*Hauteur de ligne Formulaire*/
+
+fieldset{border:0.1rem solid black;                   /*Bordure de Formulaire*/
+         margin-right: 40rem;}
+
+input.boutons{ margin-left: 8rem;                      /*Marges des boutons Envoyer/Annuler*/
+                margin-bottom: 0.2rem;}

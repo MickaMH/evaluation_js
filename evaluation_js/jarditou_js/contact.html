@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">                                                                                                      <!--En-Tête Meta-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style_jarditou.css" type="text/css" media="all">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="style_responsive.css">
+</head>
+
+    <body>    
+
+        <header>                                                                                                                <!--Header-->
+            <img src="images/jarditou_logo.jpg" alt="Logo Jarditou" title="Logo Jarditou">                                  <!--Logo Jarditou-->
+            <p>Tout le jardin</p>
+        </header>
+
+        <nav>                                                                                                                   <!--Nav-->
+            <ul>                                                                                                                <!--Liens de page Haut-->
+            <li><a href="index.html" >Accueil</a></li>
+            <li><a href="tableau.html" >Tableau</a></li>
+            <li><a href="contact.html" >Contact</a></li>
+            </ul>
+            <img src="images/promotion.jpg" alt="Promotion sur lames de terrasse" title="Promotion sur lames de terrasse">  <!--Image promotionnelle-->
+        </nav>
+            
+        <main>                                                                                                                  <!--Main Début-->
+    
+            <h1>Contact</h1>
+
+            <sup>*</sup> Ces zones sont obligatoires<br>
+            
+            <form action="http://bienvu.net/script.php" method="GET">                                                           <!--Form Début-->
+                    
+                <fieldset>
+                    <legend>Vos coordonnées</legend>
+                    
+                    <label for="nom">Votre nom <sup>*</sup>: </label><input type="text" name="nom" id="nom"><br>
+                    
+                    <label for="prenom">Votre prénom <sup>*</sup>: </label><input type="text" name="prenom" id="prenom"><br>
+                    
+                    Sexe <sup>*</sup>: <input type="radio" name="sexe" id="feminin" value="feminin"> <label for="feminin">Féminin</label>   <!--Bouton radio Féminin-->
+                    <input type="radio" name="sexe" id="masculin" value="masculin" checked > <label for="masculin">Masculin</label><br>     <!--Bouton radio Masculin-->
+                    
+                    <label for="date">Date de naissance<sup>*</sup>: </label><input type="date" name="ddn" id="date"><br>                   <!--Input Date-->
+                    
+                    <label for="codepostal">Code postal<sup>*</sup>: </label><input type="text" name="codepostal" id="codepostal"><br>
+                    
+                    <label for="adresse">Adresse : </label><input type="text" name="adresse" id="adresse"><br>
+                    
+                    <label for="ville">Ville : </label><input type="text" name="ville" id="ville"><br>
+                    
+                    <label for="email">Email<sup>*</sup>: </label><input type="email" name="email" id="email" size="25" placeholder="dave.loper@afpa.fr"><br><!--Email Placeholder-->
+                </fieldset>
+                    
+                    
+                    
+                <fieldset>
+                    <legend>Votre demande</legend>
+                    
+                    <label for="sujet">Sujet<sup>*</sup>: </label>                                                              <!--Menu Déroulant -->
+                    
+                    <select id="sujet">
+                        <option hidden="-1">Veuillez séléctionner un sujet</option>
+                        <option value="1">Mes commandes</option>
+                        <option value="2">Question sur un produit</option> 
+                        <option value="3">Réclamation</option> 
+                        <option value="4">Autres</option>
+                    </select>
+                    
+                    <br>
+
+                    Votre question<sup>*</sup>: <textarea name="commentaire" rows="2" cols="25"></textarea><br>                 <!--Zone de Texte/Textarea-->
+                </fieldset>    
+                    
+                
+                    
+                <input type="checkbox" name="cochercase" value="Jaccepteletraitementinformatiquedeceformulaire"><sup>*</sup> J'accepte le traitement informatique de ce formulaire<br>  <!--Cochez Case/Checkbox-->
+                    
+                
+                    
+                <input class="boutons" type="submit" value="Envoyer"><input type="reset" value="Annuler">                       <!--Boutons Envoyer/Annuler-->
+                    
+            </form>                                                                                                             <!--Form Fin-->
+            <br>
+        </main>                                                                                                                 <!--Main Fin-->                                                                          
+
+        <footer>                                                                                                                <!--Footer-->
+            <ul>
+                <li><a href="mentions_legales.html" >Mentions légales</a></li>                                                  <!--Liens de page Bas-->
+                <li><a href="horaires.html" >Horaires</a></li>
+                <li><a href="plan_du_site.html" >Plan du site</a></li>
+            </ul>
+        </footer>
+
+        <script src="validation.js"></script>
+    </body>
+</html>                                                                                                                         <!--Fin-->
