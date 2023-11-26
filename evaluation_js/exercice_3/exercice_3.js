@@ -1,13 +1,12 @@
-var tab = ["Audrey", "Aurélien", "Flavien", "Jérémy", "Laurent", "Melik", "Nouara", "Salem", "Samuel", "Stéphane"];
+let tableau = ["Audrey", "Aurélien", "Flavien", "Jeremy", "Laurent", "Melik", "Nouara", "Salem", "Samuel", "Stéphane"];
+let prenom = prompt("Entrez un prénom:");
 
-function supprimerPrenom(tab, prenom) {
-    let index = tab.indexOf(prenom);
-    if (index !== -1) {
-      tab.splice(index, 1);
-      tab.push("");
-      console.log("Le prénom a été supprimé avec succès.");
-    } else {
-      console.log("Le prénom n'a pas été trouvé.");
-    }
-  }
-  
+if (tableau.includes(prenom)) 
+{   let index = tableau.indexOf(prenom);
+    tableau.splice(index, 1)
+    tableau.push("");                   }
+
+else
+{   alert("Erreur");                    }
+
+console.log(tableau);             
