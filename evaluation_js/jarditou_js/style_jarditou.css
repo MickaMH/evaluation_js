@@ -56,7 +56,12 @@ sup{ color: red ;}                                    /*Astérisque en supérieu
 form{ line-height: 1.8rem;}              /*Formulaire*/ /*Hauteur de ligne Formulaire*/
 
 fieldset{border:0.1rem solid black;                   /*Bordure de Formulaire*/
-         margin-right: 40rem;}
+         margin-right: 28rem;}
 
-input.boutons{ margin-left: 8rem;                      /*Marges des boutons Envoyer/Annuler*/
+input.boutons{ margin-left: 15rem;                      /*Marges des boutons Envoyer/Annuler*/
                 margin-bottom: 0.2rem;}
+
+::placeholder{ font-style: italic;}                     /*Placeholder en italique*/
+                  
+
+  

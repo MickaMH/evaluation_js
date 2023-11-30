@@ -1,56 +1,71 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">                                                                                                      <!--En-Tête Meta-->
+    <meta charset="UTF-8">                                                                                          <!--En-Tête Meta-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Contact</title>
-    <link rel="stylesheet" href="style_jarditou.css" type="text/css" media="all">
-    <link rel="stylesheet" media="screen and (max-width: 768px)" href="style_responsive.css">
+    <link rel="stylesheet" href="style_jarditou.css" type="text/css" media="all">                                   <!--Lien CSS-->
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="style_responsive.css">                       <!--Lien Css Responsive-->
 </head>
 
-    <body>    
+    <body>                                                                                                          <!--Body-->
 
-        <header>                                                                                                                <!--Header-->
-            <img src="images/jarditou_logo.jpg" alt="Logo Jarditou" title="Logo Jarditou">                                  <!--Logo Jarditou-->
+        <header>                                                                                                    <!--Header-->
+            <img src="images/jarditou_logo.jpg" alt="Logo Jarditou" title="Logo Jarditou">                          <!--Logo Jarditou-->
             <p>Tout le jardin</p>
         </header>
 
-        <nav>                                                                                                                   <!--Nav-->
-            <ul>                                                                                                                <!--Liens de page Haut-->
+        <nav>                                                                                                       <!--Nav-->
+            <ul>                                                                                                    <!--Liens de page Haut-->
             <li><a href="index.html" >Accueil</a></li>
             <li><a href="tableau.html" >Tableau</a></li>
             <li><a href="contact.html" >Contact</a></li>
             </ul>
-            <img src="images/promotion.jpg" alt="Promotion sur lames de terrasse" title="Promotion sur lames de terrasse">  <!--Image promotionnelle-->
-        </nav>
+            <img src="images/promotion.jpg" alt="Promotion sur lames de terrasse" title="Promotion sur lames de terrasse" 
+                    class="promo">                                                                                  <!--Image Promo-->
+        </nav>                                                                               
             
-        <main>                                                                                                                  <!--Main Début-->
+        <main>                                                                                                      <!--Main-->
     
-            <h1>Contact</h1>
+            <h1>Contact</h1>                                                                                        <!--Titre H1 Contact-->
 
-            <sup>*</sup> Ces zones sont obligatoires<br>
+            <sup class="indication">*</sup> Ces champs sont obligatoires<br>
             
-            <form action="http://bienvu.net/script.php" method="GET">                                                           <!--Form Début-->
+            <form action="" method="GET" name="formulaire">                                                         <!--Form-->
                     
                 <fieldset>
                     <legend>Vos coordonnées</legend>
                     
-                    <label for="nom">Votre nom <sup>*</sup>: </label><input type="text" name="nom" id="nom"><br>
+                    <label for="nom">Votre nom <sup id="asteriNom">*</sup>: </label>                                  <!--Input nom Requis-->
+                    <input type="text" name="nom" id="nom" maxlength="50" placeholder="sans accents" required>      
+                    <span id="requisNom"></span><br>                                                                <!--Affiche Message d'erreur ou Valide-->
                     
-                    <label for="prenom">Votre prénom <sup>*</sup>: </label><input type="text" name="prenom" id="prenom"><br>
+                    <label for="prenom">Votre prénom <sup id="asteriPrenom">*</sup>: </label>                            <!--Input prenom Requis-->
+                    <input type="text" name="prenom" id="prenom" maxlength="20" placeholder="sans accents" required>
+                    <span id="requisPrenom"></span><br>
                     
-                    Sexe <sup>*</sup>: <input type="radio" name="sexe" id="feminin" value="feminin"> <label for="feminin">Féminin</label>   <!--Bouton radio Féminin-->
-                    <input type="radio" name="sexe" id="masculin" value="masculin" checked > <label for="masculin">Masculin</label><br>     <!--Bouton radio Masculin-->
+                    Sexe <sup id="asteriSexe">*</sup>:                                                                 <!--Input sexe Requis-->
+                    <input type="radio" name="sexe" id="feminin" value="feminin" required> <label for="feminin">Féminin</label>     <!--Bouton radio Féminin-->
+                    <input type="radio" name="sexe" id="masculin" value="masculin" required> <label for="masculin">Masculin</label> <!--Bouton radio Masculin-->
+                    <span id="requisSexe"></span><br>     
+
+                    <label for="date de naissance">Date de naissance<sup id="asteriDdn">*</sup>: </label>             <!--Input date naissance Requis-->
+                    <input type="text" name="date de naissance" id="ddn" placeholder="ex: jj/mm/aaaa" required> <!--Input Date remplacé par Input Text pour validation-->
+                    <span id="requisDdn"></span><br>                                    
                     
-                    <label for="date">Date de naissance<sup>*</sup>: </label><input type="date" name="ddn" id="date"><br>                   <!--Input Date-->
+                    <label for="code postal">Code postal<sup id="asteriCp">*</sup>: </label>                         <!--Input code postal Requis-->
+                    <input type="text" name="cp" id="cp" placeholder="ex: 75000" required>
+                    <span id="requisCp"></span><br>
                     
-                    <label for="codepostal">Code postal<sup>*</sup>: </label><input type="text" name="codepostal" id="codepostal"><br>
+                    <label for="adresse">Adresse : </label>                                                         <!--Input adresse-->
+                    <input type="text" name="adresse" id="adresse"><br>
                     
-                    <label for="adresse">Adresse : </label><input type="text" name="adresse" id="adresse"><br>
+                    <label for="ville">Ville : </label>                                                             <!--Input ville-->
+                    <input type="text" name="ville" id="ville"><br>
                     
-                    <label for="ville">Ville : </label><input type="text" name="ville" id="ville"><br>
-                    
-                    <label for="email">Email<sup>*</sup>: </label><input type="email" name="email" id="email" size="25" placeholder="dave.loper@afpa.fr"><br><!--Email Placeholder-->
+                    <label for="email">Email<sup id="asteriMail">*</sup>: </label>                                     <!--Input email Requis-->         
+                    <input type="email" name="mail" id="mail" size="25" placeholder="ex: dave.loper@afpa.fr" required> 
+                    <span id="requisMail"></span>                                                      
                 </fieldset>
                     
                     
@@ -58,41 +73,47 @@
                 <fieldset>
                     <legend>Votre demande</legend>
                     
-                    <label for="sujet">Sujet<sup>*</sup>: </label>                                                              <!--Menu Déroulant -->
+                    <label for="sujet">Sujet<sup id="asteriMenuDer">*</sup>: </label>                                  
                     
-                    <select id="sujet">
-                        <option hidden="-1">Veuillez séléctionner un sujet</option>
+                    <select id="menuDer" required>                                                                  <!--Menu Déroulant Requis-->  
+                        <option hidden="-1">Veuillez sélectionner un sujet</option>                                 <!--Intitulé menu caché-->
                         <option value="1">Mes commandes</option>
                         <option value="2">Question sur un produit</option> 
                         <option value="3">Réclamation</option> 
                         <option value="4">Autres</option>
                     </select>
-                    
+                    <span id="requisMenuDer"></span>
                     <br>
 
-                    Votre question<sup>*</sup>: <textarea name="commentaire" rows="2" cols="25"></textarea><br>                 <!--Zone de Texte/Textarea-->
+                    Votre question<sup id="asteriCom">*</sup>:                                                        <!--Textarea Requis-->    
+                    <textarea name="commentaire" id="com" rows="2" cols="30" maxlength="300"                        
+                                placeholder="300 caractères max." required></textarea>                             
+                    <span id="requisCom"></span><br>                                            
                 </fieldset>    
                     
                 
-                    
-                <input type="checkbox" name="cochercase" value="Jaccepteletraitementinformatiquedeceformulaire"><sup>*</sup> J'accepte le traitement informatique de ce formulaire<br>  <!--Cochez Case/Checkbox-->
+                                                                                                                    <!--Input checkbox Requis-->
+                <input type="checkbox" name="cocher case" id="coche" value="Jaccepte le traitement informatique de ce formulaire" 
+                        class="casecoche" required> 
+                <sup id="asteriCoche">*</sup> J'accepte le traitement informatique de ce formulaire                         
+                <span id="requisCoche"></span><br>                                          
                     
                 
                     
-                <input class="boutons" type="submit" value="Envoyer"><input type="reset" value="Annuler">                       <!--Boutons Envoyer/Annuler-->
+                <input class="boutons" type="submit" value="Envoyer" id="envoi" ><input type="reset" value="Annuler"> <!--Boutons Envoyer/Annuler-->
                     
-            </form>                                                                                                             <!--Form Fin-->
+            </form>                                                                                                 <!--Form Fin-->
             <br>
-        </main>                                                                                                                 <!--Main Fin-->                                                                          
+        </main>                                                                                                                                                                              
 
-        <footer>                                                                                                                <!--Footer-->
+        <footer>                                                                                                    <!--Footer-->
             <ul>
-                <li><a href="mentions_legales.html" >Mentions légales</a></li>                                                  <!--Liens de page Bas-->
+                <li><a href="mentions_legales.html" >Mentions légales</a></li>                                      <!--Liens de page Bas-->
                 <li><a href="horaires.html" >Horaires</a></li>
                 <li><a href="plan_du_site.html" >Plan du site</a></li>
             </ul>
         </footer>
 
-        <script src="validation.js"></script>
+        <script src="validation.js"></script>                                                                       <!--Lien Validation Formulaire-->
     </body>
-</html>                                                                                                                         <!--Fin-->
+</html>                                                                                                             <!--Fin-->

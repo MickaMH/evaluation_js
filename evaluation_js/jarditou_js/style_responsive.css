@@ -1,29 +1,32 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {                          /*Pour écran de taille 768px maximum*/
 
-    body { max-width: 768px;}
+    body{ margin: auto;}
 
-    header{ max-width: 768px; display:flex; flex-direction: column;}                                /*Header*/
+    header{ max-width: 100%; display:flex; flex-direction: column;}     /*En colonne*/                 /*Header*/
     
-    header img{max-width:50% ; height: auto; margin-top: 1rem; margin-bottom: 0rem;}
+    header img{max-width:50% ; height: auto; margin-top: 1rem; margin-bottom: 0rem;}            /*Logo Jarditou*/
     
-    header p { font-size: 1.5rem; margin-bottom: 1rem; margin-top: 0rem; margin-left: 30rem;}
+    header p { font-size: 1.5rem; margin-bottom: 1rem; margin-top: 0rem; margin-left: 38rem;}   /*Tout le jardin*/
 
-    ul{ padding: 0.5rem; display:flex; flex-direction: column; align-items: center; }               /*Nav*/
-
-    li a:hover{ background-color: grey; color: white; padding : 0.5rem 10rem;}
-
-    li a { text-decoration: none;}
-
-    section { width: 100%; height: 100%;}                                                           /*Section*/
-
-    article{ margin-left: 2rem; margin-right: 2rem; margin-bottom: 2rem; margin-top: 2rem;}         /*Article*/
+    ul{ width:100%; display:flex; flex-direction: column; align-items: center; }    /*En colonne*/     /*Nav*/
     
-    aside { display: none;}                                                                         /*Aside*/
+    .promo{width:108.3%; height:auto;}                                                          /*Image Promo*/
 
-    main{ width: 100%; height: 100%;}                                                               /*Main*/
+    section { width: 100%; height: 100%;}                                                               /*Section*/
 
-    fieldset{ width:70%; height:100%;}                                                              /*Bordure Formulaire*/
+    article{ margin-left: 2rem; margin-right: 2rem; margin-bottom: 2rem; margin-top: 2rem;}             /*Article*/
+    
+    aside { display: none;}                                                                             /*Aside*/
 
-    input.boutons{ margin-left: 13rem;}                                                             /*Marge Boutons Envoyer/Annuler*/
+    main{ width: 100%; height: 100%;}                                           /*Bordure Formulaire*/  /*Main*/
 
-     }
+    H1{ margin-left: 0.5rem;}                                                   /*Marge du titre H1 Contact*/
+
+    .indication{ margin-left: 0.5rem;}                                          /*Class pour marge "Ces champs sont oblig."*/
+
+    input.boutons{ margin-left: 22rem;}                                                       /*Marge Boutons Envoyer/Annuler*/
+
+    fieldset{ width:100%; margin-left: 1.1rem;}                                 /*Bordure */
+
+    .casecoche{ margin-left: 1.5rem;}                                           /*Class pour marge "case à cocher"*/
+}
